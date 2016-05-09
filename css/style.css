@@ -1,0 +1,274 @@
+/*
+Theme Name: Osborne and Wise
+Theme URI: http://www.osborneandwise.co.uk/
+Description: Osborne and Wise Law
+Version: 0.1
+Author: James Gadsby Peet
+Author URI: http://www.jamesgadsby.co.uk/
+*/
+
+@font-face {
+    font-family: LisztyHairline;
+    src: url(fonts/LisztFY-Hair_S.otf);
+}
+
+@font-face {
+    font-family: LisztyLight;
+    src: url(fonts/LisztFY-Light_S.otf);
+}
+
+@font-face {
+    font-family: LisztyBold;
+    src: url(fonts/LisztFY-Bold_S.otf);
+}
+
+
+h1, h2, h3, h4, h5 {font-family: 'LisztyBold', 'Arial', serif; color: #1b1a38;}
+body, p {font-family: 'LisztyLight', 'Arial', sans-serif;}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-bottom: 20px;
+    
+}
+a h2, a:hover h2 {text-decoration: none; color: #1b1a38;}
+a, a:hover, a:focus {text-decoration: none !important;}
+.navbar {background: #ffffff; border: none; z-index: 9;}
+section {padding-bottom: 2em;}
+
+/*
+ * Masthead for nav
+ */
+
+
+.blog-masthead {
+    position: relative;
+    width: 100%;
+    background-color: #1b1a38;    
+}
+
+.blog-masthead h2 {
+    font-size: 1em;   
+    text-align: right;
+    color: #fff;
+    font-family: 'LisztyLight', 'Arial', sans-serif;    
+}
+
+.container.blog-page {
+    margin-bottom: 20px;
+}
+
+.blog-post-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;    
+}
+
+.img-thumbnail {width: 400px; height: 200px; border: none; overflow: hidden;}
+
+/* Nav links */
+.blog-nav-item, .page_item, .page_item a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus, page_item:hover, page_item:focus  {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.page_item .active, .blog-nav .active {
+  color: #fff;
+    font-weight: bold;
+}
+.blog-nav .active:after,
+.page_item .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+@media (max-width: 767px) {
+.navbar-header{margin-top: -265px;margin-right: -40px;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {background: #fff;}    
+}
+    
+.social-headers {width: 20px; margin: 0 5px; display: inline-block;}
+.social-contact {width: 40px; margin: 0 5px 0 0px; display: inline-block;}
+.blog-masthead {color: #fff; padding: 10px; text-align: right;}
+.logo-brand {width: 290px;margin-bottom: 50px;margin-top: 30px;}
+.blog-nav li {list-style: none;}
+.blog-nav ul {margin: 0; padding:0;}
+.blog-masthead .container {padding: 0;}
+.navbar-inverse .navbar-nav>li>a {color: #000; font-family: 'LisztyLight', 'Arial', serif; }
+.navbar-inverse .navbar-nav>li>a:hover {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
+.navbar-inverse .navbar-nav>li>a:active {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
+.navbar-inverse .navbar-nav>li>a:focus {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
+.navbar-toggle {background-color: #000;}
+.jumbotron {background-image: url(img/Osborne-wise-jumbotron.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;padding-top: 350px;padding-bottom: 0px;}
+.jumbotron .container-2 {background: rgba(255, 255, 255, 0.6);width: 100%;padding: 0 0% 0 0%;}
+@media (max-width: 767px) {
+    .jumbotron .container-2 {width: 100%;padding: 0 0% 0 0%;}
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron p {color: #1B1A37;}
+
+.blog-post { display: block;}
+.navbar-nav a:focus {font-weight: bold;}
+
+@media screen and (min-width: 768px) {
+.jumbotron {margin-top: -20px;z-index: 2;}
+.navbar-nav {margin-left: 19%;}
+}
+
+@media screen and (min-width: 768px) and (max-width:990px) {
+.navbar-nav {margin-left: -20px;}
+}
+
+
+@media screen and (max-width: 768px) {
+    .jumbotron {margin-top: -50px;}    
+    h1, .col-md-8 {padding-left: 10px;}
+    .jumbotron h1 {padding-left: 0px;}
+    .people-full {width: 100%;}
+}
+
+.alignright {float: right; margin: 10px;}
+.alignleft {float: left; margin: 10px;}
+
+/* Services */
+.full-width-grey {
+    width: 100%;
+    background-color: #efefef;
+}
+
+.full-width-grey.services {
+    min-height: 210px;
+    padding-top: 20px;
+}
+
+footer a {color: #fff;}
+
+/* Quotes */
+.quote-box-home {
+    background: #ffffff;
+    color: #1b1a38;
+    padding: 0.5em;
+    margin-bottom: 30px;
+    position:relative;
+/*    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;    
+    */
+}
+
+.quote-box-home:before, .quote-box-home:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    -moz-box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    top:30%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.quote-box-home:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+/* Buttons */
+.pushbutton-wide {
+    background-color: #1b1a38;  
+    color: #fff;
+    font-family: 'LisztyBold', 'Arial', serif;    
+    border: none;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.contact-form textarea, contact-form input[type='text'], contact-form text { 
+    border: none;
+}
+
+.carousel-caption {
+    position: relative;
+    width: 30%;
+    display: block;
+    text-align: left;
+    height: 720px;
+    margin-left: 50%;
+    margin-top: -780px;
+    color: #333;
+    text-shadow: none;
+}
+
+.carousel-control.right {
+    left: 670px;
+}
+
+
+@media screen and (max-width: 768px) {
+.carousel-caption {
+    left: 7% !important;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .carousel-control.right {
+    left: 90%;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+.carousel-caption {
+    width: 100%;
+    text-align: left;
+    margin-left: -20px;
+    margin-top: 10px;
+    color: #333;
+    left: 4.5%;
+    text-shadow: none;
+}
+.carousel-control {
+    margin-top: -730px;
+    }
+.carousel-control.left {
+    margin-left: 20px;
+}
+    
+    
+}
+.carousel-inner .active.left { left: -33%; }
+.carousel-inner .next        { left:  33%; }
+.carousel-inner .prev        { left: -33%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
